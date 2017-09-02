@@ -58,7 +58,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+%\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -83,7 +83,7 @@
 
 \section{Education} 
 
-\subsection{Carnegie Mellon University, Robotics Institute}
+\subsection{Carnegie Mellon \break University, Robotics Institute}
 \descript{MS in Computer Vision}
 \location{Dec 2018 | Pittsburgh, PA}
 \location{ Cum. GPA: N/A }
@@ -154,7 +154,7 @@ OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.63\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -218,12 +218,10 @@ Developed a computer vision application that tracks the eye ball movement and co
 
 \section{Awards} 
 \begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
+2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
+2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
+2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
 \end{tabular}
 \sectionsep
 
