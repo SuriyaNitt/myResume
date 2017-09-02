@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\href{https://in.linkedin.com/in/suriya-narayanan}{suriya-narayanan@linkedin} | 
+\href{mailto:suriyanarayanan987@gmail.com}{suriyanarayanan987@gmail.com} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Carnegie Mellon University, Robotics Institute}
+\descript{MS in Computer Vision}
+\location{Dec 2018 | Pittsburgh, PA}
+\location{ Cum. GPA: N/A }
+\sectionsep
+
+\subsection{National Institute of Technology, Tiruchirappalli}
+\descript{BTech in Electrical and Electronics Engineering}
+\location{May 2014 | Tiruchirappalli, India}
+\location{ Cum. GPA: 8.8 / 10.0 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/supernova63}{\bf suriya-narayanan@fb} \\
+Github:// \href{https://github.com/SuriyaNitt}{\bf suriya-narayanan@github} \\
+LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf suriya-narayanan@linkedin} \\
+Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf suriya-narayanan@twitter} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Intro to Machine Learning \\
+Intro to Computer Vision \\
+Math fundamentals for Robotics \\
+Learning and Perception \\
+Geometry based Computer Vision \\
+\sectionsep
+
+\subsection{Undergraduate}
+Algorithms and Data Structures \\
+Operating Systems \\
+Object Oriented Programming \\
+Digital Signal Processing \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} OpenCL \\
+Matlab \textbullet{} Cuda \textbullet{} \LaTeX\ \textbullet{} RobotC \\ 
+\sectionsep
+\subsection{Operating Systems}
+Linux \textbullet{} Windows \textbullet{} TI sysBIOS \textbullet{} Android \\
+\sectionsep
+\subsection{Packages}
+Eclipse \textbullet{} Code Composer Studio \textbullet{} Qt \textbullet{} GIMP \textbullet{} Microsoft Office \textbullet{} Git \\
+\sectionsep
+\subsection{Frameworks}
+OpenCL \textbullet{} CUDA \textbullet{} TI Vision SDK \\
+\sectionsep
+\subsection{Libraries} 
+OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet{} Theano \textbullet{} TensorFlow \textbullet{} scikit-learn \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Texas Instruments}
+\descript{| Software Engineer }
+\location{July 2014 - June 2017 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improved Adaboost classifier for object detection by adapting soft exit. \href{http://ieeexplore.ieee.org/document/7889296/}{Publication, ICCE 2017}
+\item Built and improved a CNN model for driver drowsiness detection
+\item Worked on end to end learning algorithm for self-driving cars
+\item Developed a set of OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{Publication, HiPC 2015}
+\item Accelerated a list of OpenCV functions on TI DSP using OpenCL
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Texas Instruments}
+\descript{| Software Engineering Intern }
+\location{May 2013 – July 2013 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improvised an existing Ground Plane Detection using homography by defining an intelligent ROI and lane masking technique. \href{https://www.google.com/patents/US20150178573}{Patent}. \href{http://ieeexplore.ieee.org/document/6775971/}{Publication,ICCE 2014}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Structure from Motion}
+\descript{}
+\location{Jan 2014 – April 2014 | Tiruchirappalli, India}
+Developed a C++ Structure from Motion prototype recreating the theoretical results to understand multi-view geometry.
+\sectionsep
+
+\runsubsection{Real-time sudoku solver}
+\descript{}
+\location{August 2013 – August 2013 | Tiruchirappalli, India}
+Created an android application that uses camera to search for sudoku in its view and solves it upon detecting one.
+\sectionsep
+
+\runsubsection{FTC robotics challenge}
+\descript{}
+\location{Jan 2013 – March 2013 | Tiruchirappalli, India}
+Programmed a robot for FTC robotics competition which can either automatically or manually pick up rings and deposit on racks.
+\sectionsep
+
+\runsubsection{Eye Mouse}
+\descript{}
+\location{Jan 2012 – Jan 2012 | Tiruchirappalli, India}
+Developed a computer vision application that tracks the eye ball movement and controls the mouse pointer accordingly using OpenCV 2.0.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2014	     & top 52/2500  & KPCB Engineering Fellow\\
+2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+2013	     & National  & Jump Trading Challenge Finalist\\
+2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
