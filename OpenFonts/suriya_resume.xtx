@@ -169,6 +169,16 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+
+\runsubsection{Samsung Research America}
+\descript{| Computer Vision Research Intern }
+\location{May 2018 - August 2018 | Mountain View, USA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Human Pose Estimation: Developed datasets for non-traditional inputs, finetuned Openpose and tracked people
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Texas Instruments}
 \descript{| Software Engineer }
 \location{July 2014 - June 2017 | Bangalore, India}
@@ -176,7 +186,7 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \begin{tightemize}
 \item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
 \item Improved Adaboost classifier for object detection yielding {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
-\item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+\item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers, HiPC 2015]}}
 % \item Developed a set of Image Processing OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
 % \item Accelerated OpenCV using OpenCL, boosting performance by {\bf 3x over ARM A15}
 % \item Released the above accelerated functions as applications in TI Vision SDK
@@ -197,12 +207,6 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Academic Projects}
-
-\runsubsection{Human Pose Estimation and Tracking }
-\descript{}
-\location{May 2018 - August 2018 | CMU, Pittsburgh}
-Developed datasets for non-traditional inputs, finetuned Openpose and tracked people
-\sectionsep
 
 \runsubsection{Weakly Supervised Object detection}
 \descript{}
@@ -231,7 +235,7 @@ Developed an application that removes a person from an image from a single click
 \runsubsection{Network Regularisation for Aligned Objects}
 \descript{}
 \location{September 2017 - October 2017 | CMU, Pittsburgh}
-Regualized deep networks using a developed technique that induces sparsity and speeds up computation
+Regualized deep networks using a developed technique that induces sparsity
 \sectionsep
 
 \runsubsection{Augmented Reality}
