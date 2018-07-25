@@ -47,10 +47,19 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
- 
+\usepackage[document]{ragged2e}
+%\usepackage[usenames, dvipsnames]{color}
+\usepackage{color}
+
 \pagestyle{fancy}
 \fancyhf{}
- 
+
+%\usepackage{sectsty}
+%\allsectionsfont{\raggedleft}
+
+%\usepackage{pdfrender,xcolor}
+%\pdfrender{StrokeColor=black,TextRenderingMode=2,LineWidth=100pt}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,9 +74,11 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\href{https://in.linkedin.com/in/suriya-narayanan}{suriya-narayanan@linkedin} | 
-\href{mailto:suriyanarayanan987@gmail.com}{suriyanarayanan987@gmail.com} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}
-}
+
+%\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\href{https://in.linkedin.com/in/suriya-narayanan}{Suriya Narayanan Lakshmanan@linkedin} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}
+%}
+
+\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\url{https://suriyanitt.github.io} | \urlstyle{same}\url{https://in.linkedin.com/in/suriya-narayanan} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -75,7 +86,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.3\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -83,42 +94,42 @@
 
 \section{Education} 
 
-\subsection{Carnegie Mellon \break University, Robotics Institute}
-\descript{MS in Computer Vision}
+%\subsection{Carnegie Mellon University, Robotics Institute}
+\subsection{CMU, Robotics Institute}
+\descript{Master's in Computer Vision}
 \location{Dec 2018 | Pittsburgh, PA}
-\location{ Cum. GPA: N/A }
+\location{ Cum. GPA: \bf {3.83/4.0} }
 \sectionsep
 
-\subsection{National Institute of Technology, Tiruchirappalli}
-\descript{BTech in Electrical and Electronics Engineering}
+%\subsection{National Institute of \break Technology, Tiruchirappalli}
+\subsection{NIT, Tiruchirappalli}
+\descript{Bachelor of Technology in \break Electrical and Electronics Engineering}
 \location{May 2014 | Tiruchirappalli, India}
-\location{ Cum. GPA: 8.8 / 10.0 }
+\location{ Cum. GPA: \bf {8.8 / 10.0} }
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Facebook:// \href{https://www.facebook.com/supernova63}{\bf suriya-narayanan@fb} \\
-Github:// \href{https://github.com/SuriyaNitt}{\bf suriya-narayanan@github} \\
-LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf suriya-narayanan@linkedin} \\
-Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf suriya-narayanan@twitter} \\
+%\section{Links} 
+%Facebook:// \href{https://www.facebook.com/supernova63}{\bf suriya-narayanan@fb} \\
+%Github:// \href{https://github.com/SuriyaNitt}{\bf suriya-narayanan@github} \\
+%LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf suriya-narayanan@linkedin} \\
+%Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf suriya-narayanan@twitter} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Coursework}
-\subsection{Graduate}
+
 Intro to Machine Learning \\
 Intro to Computer Vision \\
 Math fundamentals for Robotics \\
-Learning and Perception \\
-Geometry based Computer Vision \\
+Visual Learning and Recognition \\
+Deep Reinforcement Learning\\
 \sectionsep
-
-\subsection{Undergraduate}
 Algorithms and Data Structures \\
 Operating Systems \\
 Object Oriented Programming \\
@@ -130,20 +141,17 @@ Digital Signal Processing \\
 
 \section{Skills}
 \subsection{Programming}
-C \textbullet{}   C++ \textbullet{} Python \textbullet{} OpenCL \\
-Matlab \textbullet{} Cuda \textbullet{} \LaTeX\ \textbullet{} RobotC \\ 
-\sectionsep
-\subsection{Operating Systems}
-Linux \textbullet{} Windows \textbullet{} TI sysBIOS \textbullet{} Android \\
-\sectionsep
-\subsection{Packages}
-Eclipse \textbullet{} Code Composer Studio \textbullet{} Qt \textbullet{} GIMP \textbullet{} Microsoft Office \textbullet{} Git \\
-\sectionsep
-\subsection{Frameworks}
-OpenCL \textbullet{} CUDA \textbullet{} TI Vision SDK \\
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
+\textbullet{} \LaTeX\ \\ 
 \sectionsep
 \subsection{Libraries} 
-OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet{} Theano \textbullet{} TensorFlow \textbullet{} scikit-learn \\
+TensorFlow \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} scikit-learn \\
+\sectionsep
+\subsection{Operating Systems}
+Linux \textbullet{} Windows \textbullet{} Android \\
+\sectionsep
+\subsection{Other Software}
+Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,7 +162,7 @@ OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.63\textwidth} 
+\begin{minipage}[t]{0.69\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -166,20 +174,21 @@ OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet
 \location{July 2014 - June 2017 | Bangalore, India}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Improved Adaboost classifier for object detection by adapting soft exit. \href{http://ieeexplore.ieee.org/document/7889296/}{Publication, ICCE 2017}
-\item Built and improved a CNN model for driver drowsiness detection
-\item Worked on end to end learning algorithm for self-driving cars
-\item Developed a set of OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{Publication, HiPC 2015}
-\item Accelerated a list of OpenCV functions on TI DSP using OpenCL
+\item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
+\item Improved Adaboost classifier for object detection yielding {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
+\item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+% \item Developed a set of Image Processing OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+% \item Accelerated OpenCV using OpenCL, boosting performance by {\bf 3x over ARM A15}
+% \item Released the above accelerated functions as applications in TI Vision SDK
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Texas Instruments}
-\descript{| Software Engineering Intern }
+\descript{| Computer Vision Intern }
 \location{May 2013 – July 2013 | Bangalore, India}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Improvised an existing Ground Plane Detection using homography by defining an intelligent ROI and lane masking technique. \href{https://www.google.com/patents/US20150178573}{Patent}. \href{http://ieeexplore.ieee.org/document/6775971/}{Publication,ICCE 2014}
+\item Improved an existing homography based Ground Plane Detection by {\bf 10\%}. \href{https://www.google.com/patents/US20150178573}{\bf \textit{[Ground plane detection,  \color{blue}{Patent 2017}]}}. \href{http://ieeexplore.ieee.org/document/6775971/}{\bf \textit{[Improved ground plane detection in real time systems using homography, ICCE 2014]}}
 \end{tightemize}
 \sectionsep
 
@@ -187,43 +196,89 @@ OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-\runsubsection{Structure from Motion}
+\section{Academic Projects}
+
+\runsubsection{Human Pose Estimation and Tracking }
 \descript{}
-\location{Jan 2014 – April 2014 | Tiruchirappalli, India}
-Developed a C++ Structure from Motion prototype recreating the theoretical results to understand multi-view geometry.
+\location{May 2018 - August 2018 | CMU, Pittsburgh}
+Developed datasets for non-traditional inputs, finetuned Openpose and tracked people
 \sectionsep
 
-\runsubsection{Real-time sudoku solver}
+\runsubsection{Weakly Supervised Object detection}
 \descript{}
-\location{August 2013 – August 2013 | Tiruchirappalli, India}
-Created an android application that uses camera to search for sudoku in its view and solves it upon detecting one.
+\location{March 2018 - March 2018 | CMU, Pittsburgh}
+Replicated a combination of papers on weak supervision based object detection
 \sectionsep
 
-\runsubsection{FTC robotics challenge}
+\runsubsection{Intersection reconstruction from single stationary camera }
 \descript{}
-\location{Jan 2013 – March 2013 | Tiruchirappalli, India}
-Programmed a robot for FTC robotics competition which can either automatically or manually pick up rings and deposit on racks.
+\location{January 2018 - May 2018 | CMU, Pittsburgh}
+Worked on reconstructing intersection from a single stationary camera using a combination of Deep Learning techniques, non-linear optimization and tracking
 \sectionsep
 
-\runsubsection{Eye Mouse}
+\runsubsection{Learning hierarchical policies in dynamic environments}
 \descript{}
-\location{Jan 2012 – Jan 2012 | Tiruchirappalli, India}
-Developed a computer vision application that tracks the eye ball movement and controls the mouse pointer accordingly using OpenCV 2.0.
+\location{March 2018 - May 2018 | CMU, Pittsburgh}
+Developed an RL agent that can quickly adapt to a dynamic environment with sparse reward
 \sectionsep
+
+\runsubsection{Intelligent Inpainting}
+\descript{}
+\location{October 2017 - November 2017 | CMU, Pittsburgh}
+Developed an application that removes a person from an image from a single click
+\sectionsep
+
+\runsubsection{Network Regularisation for Aligned Objects}
+\descript{}
+\location{September 2017 - October 2017 | CMU, Pittsburgh}
+Regualized deep networks using a developed technique that induces sparsity and speeds up computation
+\sectionsep
+
+\runsubsection{Augmented Reality}
+\descript{}
+\location{September 2017 – October 2017 | CMU, Pittsburgh}
+Created an AR application from scratch on Matlab
+\sectionsep
+
+\runsubsection{Panorama}
+\descript{}
+\location{September 2017 – October 2017 | CMU, Pittsburgh}
+Developed code for panorama creation from scratch on Matlab
+\sectionsep
+
+\runsubsection{Scene Classification}
+\descript{}
+\location{September 2017 | CMU, Pittsburgh}
+Performed scene classification using Spatial Pyramid Matching from scratch
+\sectionsep
+
+% \runsubsection{Structure from Motion}
+% \descript{}
+% \location{January 2014 – April 2014 | NIT Tiruchirappalli, India}
+% Developed Structure from Motion algorithm from scratch in C++
+% \sectionsep
+
+% \runsubsection{Real-time sudoku solver}
+% \descript{}
+% \location{August 2013 – August 2013 | NIT Tiruchirappalli, India}
+% Created an android application that searches for sudoku mesh in its camera view and solves upon detecting one\\
+% \href{https://play.google.com/store/apps/details?id=com.rtss&hl=en}{\bf \textit{Realtime Sudoku Solver on Play Store}}
+% \sectionsep
+    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
-2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
-2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
-2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
-\end{tabular}
-\sectionsep
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
+%2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
+%2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
+%2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
+%\end{tabular}
+%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PUBLICATIONS
@@ -236,4 +291,38 @@ Developed a computer vision application that tracks the eye ball movement and co
 %\nocite{*}
 
 \end{minipage} 
+
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+% \begin{minipage}[t]{0.35\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Facebook:// \href{https://www.facebook.com/supernova63}{\bf Suriya Narayanan@fb} \\
+% Github:// \href{https://github.com/SuriyaNitt}{\bf SuriyaNitt@github} \\
+% LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf Suriya Narayanan \break Lakshmanan@linkedin} \\
+% Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf Suriya Narayanan L@twitter} \\
+
+% \end{minipage} 
+% \hfill
+% \begin{minipage}[t]{0.62\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
+% 2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
+% 2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
+% 2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
+% \end{tabular}
+% \sectionsep
+
+% \end{minipage} 
+
 \end{document}  \documentclass[]{article}
