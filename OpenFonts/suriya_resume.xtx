@@ -175,8 +175,8 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \location{May 2018 - August 2018 | Mountain View, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Human Pose Estimation: Developed human pose datasets for proprietary
-sensors using domain adaptation, tuned Openpose and developed people tracking
+\item Developed human pose datasets for proprietary
+sensors using unsupervised domain adaptation, tuned Openpose and developed people tracking
 \end{tightemize}
 \sectionsep
 
