@@ -145,7 +145,7 @@ C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
 \textbullet{} \LaTeX\ \\ 
 \sectionsep
 \subsection{Libraries} 
-TensorFlow \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} scikit-learn \\
+TensorFlow (Python and C++) \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} scikit-learn \\
 \sectionsep
 \subsection{Operating Systems}
 Linux \textbullet{} Windows \textbullet{} Android \\
@@ -175,7 +175,8 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \location{May 2018 - August 2018 | Mountain View, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Human Pose Estimation: Developed datasets for non-traditional inputs, finetuned Openpose and tracked people
+\item Human Pose Estimation: Developed human pose datasets for proprietary
+sensors using domain adaptation, tuned Openpose and developed people tracking
 \end{tightemize}
 \sectionsep
 
@@ -211,13 +212,14 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \runsubsection{Weakly Supervised Object detection}
 \descript{}
 \location{March 2018 - March 2018 | CMU, Pittsburgh}
-Replicated a combination of papers on weak supervision based object detection
+Implemented weakly supervised object detection algorithm: WSDDN
 \sectionsep
 
 \runsubsection{Intersection reconstruction from single stationary camera }
 \descript{}
 \location{January 2018 - May 2018 | CMU, Pittsburgh}
-Worked on reconstructing intersection from a single stationary camera using a combination of Deep Learning techniques, non-linear optimization and tracking
+Reconstructed traffic intersection from a single stationary camera using
+keypoint detetion, tracking and geometric constraints
 \sectionsep
 
 \runsubsection{Learning hierarchical policies in dynamic environments}
