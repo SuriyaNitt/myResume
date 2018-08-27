@@ -144,7 +144,7 @@ Digital Signal Processing \\
 \section{Skills}
 \subsection{Programming}
 C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
-\textbullet{} \LaTeX\ \\ 
+\textbullet{} OpenCL \textbullet{} \LaTeX\ \\ 
 \sectionsep
 \subsection{Libraries} 
 TensorFlow (Python and C++) \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} scikit-learn \\
@@ -178,7 +178,7 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed human pose datasets for proprietary
-sensors using unsupervised domain adaptation, tuned Openpose and developed people tracking
+sensors using unsupervised domain adaptation and developed human pose estimation network
 \end{tightemize}
 \sectionsep
 
@@ -189,8 +189,8 @@ sensors using unsupervised domain adaptation, tuned Openpose and developed peopl
 \begin{tightemize}
 \item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
 \item Improved Adaboost classifier for object detection yielding {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
-\item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers, HiPC 2015]}}
-% \item Developed a set of Image Processing OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+% \item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers, HiPC 2015]}}
+\item Developed a set of Image Processing OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
 % \item Accelerated OpenCV using OpenCL, boosting performance by {\bf 3x over ARM A15}
 % \item Released the above accelerated functions as applications in TI Vision SDK
 \end{tightemize}
@@ -211,10 +211,17 @@ sensors using unsupervised domain adaptation, tuned Openpose and developed peopl
 
 \section{Academic Projects}
 
-\runsubsection{Intelligent Inpainting}
+\runsubsection{Smart reconstruction}
 \descript{}
-\location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click
+\location{January 2018 - May 2018 | CMU, Pittsburgh}
+Reconstructed traffic from a single stationary camera using
+keypoint detetion, tracking and geometric constraints
+\sectionsep
+
+\runsubsection{Learning hierarchical policies in dynamic environments}
+\descript{}
+\location{March 2018 - May 2018 | CMU, Pittsburgh}
+Developed an RL agent to quickly adapt to a dynamic environment with sparse reward
 \sectionsep
 
 \runsubsection{Weakly Supervised Object detection}
@@ -223,24 +230,17 @@ Developed an application that removes a person from an image from a single click
 Implemented weakly supervised object detection algorithm: WSDDN
 \sectionsep
 
-\runsubsection{Intersection reconstruction from single stationary camera }
+\runsubsection{Intelligent Inpainting}
 \descript{}
-\location{January 2018 - May 2018 | CMU, Pittsburgh}
-Reconstructed traffic intersection from a single stationary camera using
-keypoint detetion, tracking and geometric constraints
+\location{October 2017 - November 2017 | CMU, Pittsburgh}
+Developed an application that removes a person from an image from a single click
 \sectionsep
 
-\runsubsection{Learning hierarchical policies in dynamic environments}
-\descript{}
-\location{March 2018 - May 2018 | CMU, Pittsburgh}
-Developed an RL agent that can quickly adapt to a dynamic environment with sparse reward
-\sectionsep
-
-\runsubsection{Network Regularisation for Aligned Objects}
-\descript{}
-\location{September 2017 - October 2017 | CMU, Pittsburgh}
-Regualized deep networks using a developed technique that induces sparsity
-\sectionsep
+% \runsubsection{Network Regularisation for Aligned Objects}
+% \descript{}
+% \location{September 2017 - October 2017 | CMU, Pittsburgh}
+% Regualized deep networks using a developed technique that induces sparsity
+% \sectionsep
 
 \runsubsection{Augmented Reality}
 \descript{}
