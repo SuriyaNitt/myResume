@@ -128,7 +128,9 @@ Intro to Machine Learning \\
 Intro to Computer Vision \\
 Math fundamentals for Robotics \\
 Visual Learning and Recognition \\
-Deep Reinforcement Learning\\
+Deep Reinforcement Learning \\
+Geometry based maths in Vision \\
+Computational Photography \\
 \sectionsep
 Algorithms and Data Structures \\
 Operating Systems \\
@@ -209,6 +211,12 @@ sensors using unsupervised domain adaptation, tuned Openpose and developed peopl
 
 \section{Academic Projects}
 
+\runsubsection{Intelligent Inpainting}
+\descript{}
+\location{October 2017 - November 2017 | CMU, Pittsburgh}
+Developed an application that removes a person from an image from a single click
+\sectionsep
+
 \runsubsection{Weakly Supervised Object detection}
 \descript{}
 \location{March 2018 - March 2018 | CMU, Pittsburgh}
@@ -226,12 +234,6 @@ keypoint detetion, tracking and geometric constraints
 \descript{}
 \location{March 2018 - May 2018 | CMU, Pittsburgh}
 Developed an RL agent that can quickly adapt to a dynamic environment with sparse reward
-\sectionsep
-
-\runsubsection{Intelligent Inpainting}
-\descript{}
-\location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click
 \sectionsep
 
 \runsubsection{Network Regularisation for Aligned Objects}
