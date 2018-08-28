@@ -245,7 +245,7 @@ Developed an application that removes a person from an image from a single click
 \runsubsection{Intelligent Inpainting}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click
+Developed an application that removes a person from an image from a single click using machine learning
 \sectionsep
 
 % \runsubsection{Network Regularisation for Aligned Objects}
@@ -254,11 +254,11 @@ Developed an application that removes a person from an image from a single click
 % Regualized deep networks using a developed technique that induces sparsity
 % \sectionsep
 
-\runsubsection{Augmented Reality}
-\descript{}
-\location{September 2017 – October 2017 | CMU, Pittsburgh}
-Created an AR application from scratch on Matlab
-\sectionsep
+% \runsubsection{Augmented Reality}
+% \descript{}
+% \location{September 2017 – October 2017 | CMU, Pittsburgh}
+% Created an AR application from scratch on Matlab
+% \sectionsep
 
 % \runsubsection{Panorama}
 % \descript{}
