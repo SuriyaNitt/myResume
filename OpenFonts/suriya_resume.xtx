@@ -178,7 +178,7 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed human pose datasets for proprietary
-sensors using unsupervised domain adaptation and developed human pose estimation network
+sensors using unsupervised domain adaptation and developed human pose estimation network C++ application
 \end{tightemize}
 \sectionsep
 
@@ -230,6 +230,18 @@ Developed an RL agent to quickly adapt to a dynamic environment with sparse rewa
 Implemented weakly supervised object detection algorithm: WSDDN
 \sectionsep
 
+\runsubsection{Lidar plus IMU SLAM}
+\descript{}
+\location{February 2018 - March 2018 | CMU, Pittsburgh}
+Implemented hector slam and dead reckoning 
+\sectionsep
+
+\runsubsection{Digital Art using SFM}
+\descript{}
+\location{October 2017 - November 2017 | CMU, Pittsburgh}
+Developed an application that removes a person from an image from a single click
+\sectionsep
+
 \runsubsection{Intelligent Inpainting}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
@@ -248,17 +260,17 @@ Developed an application that removes a person from an image from a single click
 Created an AR application from scratch on Matlab
 \sectionsep
 
-\runsubsection{Panorama}
-\descript{}
-\location{September 2017 – October 2017 | CMU, Pittsburgh}
-Developed code for panorama creation from scratch on Matlab
-\sectionsep
+% \runsubsection{Panorama}
+% \descript{}
+% \location{September 2017 – October 2017 | CMU, Pittsburgh}
+% Developed code for panorama creation from scratch on Matlab
+% \sectionsep
 
-\runsubsection{Scene Classification}
-\descript{}
-\location{September 2017 | CMU, Pittsburgh}
-Performed scene classification using Spatial Pyramid Matching from scratch
-\sectionsep
+% \runsubsection{Scene Classification}
+% \descript{}
+% \location{September 2017 | CMU, Pittsburgh}
+% Performed scene classification using Spatial Pyramid Matching from scratch
+% \sectionsep
 
 % \runsubsection{Structure from Motion}
 % \descript{}
