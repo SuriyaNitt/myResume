@@ -245,7 +245,7 @@ Developed an application to create portrait effect from single camera using SFM 
 \runsubsection{Intelligent Inpainting}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click using machine learning
+Developed an application that removes a person from an image from a single click using machine learning and exemplar inpainting
 \sectionsep
 
 % \runsubsection{Network Regularisation for Aligned Objects}
