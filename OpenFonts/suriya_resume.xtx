@@ -239,7 +239,7 @@ Implemented hector slam and dead reckoning
 \runsubsection{Digital Art using SFM}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click
+Developed an application to create portrait effect from single camera using SFM
 \sectionsep
 
 \runsubsection{Intelligent Inpainting}
