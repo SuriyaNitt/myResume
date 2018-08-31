@@ -146,8 +146,9 @@ Digital Signal Processing \\
 C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
 \textbullet{} OpenCL \textbullet{} \LaTeX\ \\ 
 \sectionsep
-\subsection{Libraries} 
-TensorFlow (Python and C++) \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} scikit-learn \\
+\subsection{Libraries and frameworks} 
+TensorFlow (Python and C++) \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy
+\textbullet{} OpenAI gym \textbullet{} scikit-learn \\
 \sectionsep
 \subsection{Operating Systems}
 Linux \textbullet{} Windows \textbullet{} Android \\
