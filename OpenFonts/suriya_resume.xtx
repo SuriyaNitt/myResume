@@ -234,7 +234,7 @@ Implemented weakly supervised object detection algorithm: WSDDN
 \runsubsection{Lidar plus IMU SLAM}
 \descript{}
 \location{February 2018 - March 2018 | CMU, Pittsburgh}
-Implemented hector slam and dead reckoning 
+Fused LIDAR with IMU by implementing hector slam with the IMU extension
 \sectionsep
 
 \runsubsection{Digital Art using SFM}
