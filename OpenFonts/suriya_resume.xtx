@@ -137,7 +137,7 @@ Intro to Machine Learning \\
 Intro to Computer Vision \\
 Math fundamentals for Robotics \\
 Visual Learning and Recognition \\
-Deep Reinforcement Learning \\
+% Deep Reinforcement Learning \\
 Geometry based maths in Vision \\
 Computational Photography \\
 
@@ -157,8 +157,8 @@ C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
 \textbullet{} OpenCL \textbullet{} \LaTeX\ \\ 
 \sectionsep
 \subsection{Libraries} 
-PyTorch (Python and C++) \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} TensorFlow (Python and C++) \textbullet{} ROS \textbullet{} PCL
-\textbullet{} scikit-learn \textbullet{} OpenAI gym \textbullet{} Ax (Adaptive Experimentation) \\
+OpenCV \textbullet{} PyTorch (Python and C++) \textbullet{} ROS \textbullet{} PCL \textbullet{} Numpy \textbullet{} TensorFlow (Python and C++)
+\textbullet{} scikit-learn \\
 \sectionsep
 \subsection{Operating Systems}
 Linux \textbullet{} Windows \textbullet{} Android \\
@@ -185,21 +185,25 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 
 \runsubsection{Cyngn Inc (self-driving vehicle company)}
 \descript{| Perception Engineer }
-\location{Feb 2019 - Present | Menlo Park, USA}
+\location{Feb 2019 - Present | Menlo Park, CA, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Ported a popular open source 2d detection PyTorch model to TorchScript and implemented 2D detection pipeline in C++
-\item Working on finetuning the same by
-    \begin{itemize}
-        \item Incorporating architectural advances such as weighted BIFPN from 'EfficientDet' paper
-        \item Using Swish activation over ReLU activation
-        \item Tuning hyperparameters such as learning rate, weight decay, focal loss parameters, loss weightage parameters using Bayesion Optimization package called 'Ax'
-        \item Creating hierarchy of classes to better differentiate between classes and easily adopt with different annotation formats
-    \end{itemize}
 \item Designed and implemented traffic light detection system from scratch consisting of components such as traffic light detection, traffic light recognition and tracking
+\item 2d object detection using PyTorch
+    \begin{itemize}
+        \item Built on top of open source model and finetuned by
+            \begin{itemize}
+                \item Incorporating architectural advances such as weighted BIFPN from 'EfficientDet' paper
+                \item Using Swish activation over ReLU activation
+                \item Tuning hyperparameters such as learning rate, weight decay, focal loss parameters, loss weightage parameters using Bayesion Optimization package called 'Ax'
+                \item Creating hierarchy of classes to better differentiate between classes and easily adopt with different annotation formats
+            \end{itemize}
+        \item Ported 2d detection model to TorchScript and implemented 2D detection pipeline in C++
+    \end{itemize}
+\item Evaluation of lidar based SLAM algorithms for indoor applications
 \item Analyzed the depth error of stereo and came up with an optimal baseline width taking into account target working range, camera FOV and permissible blindspot
-\item Worked on prototyping multilayer stixels world work on the in-house stereo camera setup which involved camera calibration, stereo rectification, tuning SGBM parameters and understanding stixels computation
-\item Worked on choosing camera format and lens focal length for required detection range and Field of View
+\item Protyped multilayer stixels world work on the in-house stereo camera setup which involved camera calibration, stereo rectification, tuning SGBM parameters and understanding stixels computation
+\item Created requirements for choosing camera format and lens focal length for required detection range and Field of View
 \item Designed and implemented software based Lidar-Camera synchronization system that is capable of operating at 10Hz under certain configurations
 \end{tightemize}
 \sectionsep
@@ -207,14 +211,14 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \runsubsection{Samsung Research America}
 \descript{| Computer Vision Research Intern }
 \location{Think Tank Team}
-\location{May 2018 - August 2018 | Mountain View, USA}
+\location{May 2018 - August 2018 | Mountain View, CA, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed human pose datasets for proprietary imaging
 sensors using unsupervised domain adaptation
 \item Developed a deep learning based human pose estimation network that can predict human poses on frames obtained from the
 proprietary imaging sensor
-\item Worked on deploying the above developed network by creating a C++ application using TensorFlow APIs for building and 
+\item Deployed the above developed network by creating a C++ application using TensorFlow APIs for building and 
 executing the deep learning graph
 \end{tightemize}
 \sectionsep
@@ -260,7 +264,7 @@ executing the deep learning graph
 \runsubsection{Unsupervised segmentation data generation}
 \descript{}
 \location{October 2018 - December 2018 | CMU, Pittsburgh}
-Interpolated semantic segmentation labels between key frames in NYU depth dataset v2 videos using dense depth as supervision for intermediate frames improving mIoU by 2\% over FCN baseline finetuned on NYU v2 dataset
+Interpolated semantic segmentation labels to frames in between key frames in NYU depth dataset v2 videos using dense depth as supervision for intermediate frames improving mIoU by 2\% over FCN baseline finetuned on NYU v2 dataset
 \sectionsep
 
 \runsubsection{RGB Super slomo using high fps Dynamic vision sensor}
@@ -286,7 +290,7 @@ keypoint detetion and ground plane assumption (similar to the work done by Beyon
 \runsubsection{Weakly Supervised Object detection}
 \descript{}
 \location{March 2018 - March 2018 | CMU, Pittsburgh}
-Implemented weakly supervised object detection algorithm: WSDDN as part of course project
+Implemented weakly supervised object detection algorithm: WSDDN as part of course project in TensorFlow
 \sectionsep
 
 % \runsubsection{Lidar plus IMU SLAM}
@@ -298,19 +302,19 @@ Implemented weakly supervised object detection algorithm: WSDDN as part of cours
 \runsubsection{Scene Classification}
 \descript{}
 \location{September 2017 | CMU, Pittsburgh}
-Performed scene classification using Spatial Pyramid Matching from scratch as part of course project
+Implemented scene classification using Spatial Pyramid Matching from scratch as part of course project in Matlab
 \sectionsep
 
 \runsubsection{Digital Art using SFM}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application to create portrait effect from single camera using SFM and 3D segmentation as part of course project
+Developed an application to create portrait effect from single camera using SFM and 3D segmentation as part of course project using OpenCV C++
 \sectionsep
 
 \runsubsection{Intelligent Inpainting}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click using pedestrian detection, semantic segmentation and exemplar inpainting
+Developed an application that removes a person from an image from a single click using pedestrian detection, semantic segmentation and exemplar inpainting in C++
 \sectionsep
 
 
@@ -380,7 +384,9 @@ Developed an application that removes a person from an image from a single click
 \section{Publications}
 % \begin{itemize}
     \textbullet{} Improved ground plane detection in real-time using homography, ICCE \\
-    \textbullet{} Understanding performance benefit of asynchronous data transfers in OpenCL programs executing on media processors, HiPC
+    \href{https://ieeexplore.ieee.org/document/6775971} {\bf \textit{link to the paper}} \\
+    \textbullet{} Understanding performance benefit of asynchronous data transfers in OpenCL programs executing on media processors, HiPC \\
+    \href{https://ieeexplore.ieee.org/document/7397627} {\bf \textit{link to the paper}} \\
 % \end{itemize}
 
 \end{minipage}
