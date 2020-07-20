@@ -78,7 +78,7 @@
 %\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\href{https://in.linkedin.com/in/suriya-narayanan}{Suriya Narayanan Lakshmanan@linkedin} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}
 %}
 
-\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\url{https://suriyanitt.github.io} | \urlstyle{same}\url{https://in.linkedin.com/in/suriya-narayanan} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}}
+\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\url{https://suriyanitt.github.io} | \urlstyle{same}\url{https://in.linkedin.com/in/suriya-narayanan} | Santa Clara | 412.626.8524 | \href{mailto:suriyanarayanan987@gmail.com}{suriyanarayanan987@gmail.com}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -97,6 +97,7 @@
 %\subsection{Carnegie Mellon University, Robotics Institute}
 \subsection{CMU, Robotics Institute}
 \descript{Master's in Computer Vision}
+\location{Advised by Prof. Srinivasa Narasimhan}
 \location{Dec 2018 | Pittsburgh, PA}
 \location{ Cum. GPA: \bf {3.83/4.0} }
 \sectionsep
@@ -124,6 +125,14 @@
 
 \section{Coursework}
 
+% Intro to Machine Learning (10-601)\\
+% Intro to Computer Vision (16-720) \\
+% Math fundamentals for Robotics (16-811)\\
+% Visual Learning and Recognition (16-824)\\
+% Deep Reinforcement Learning (10-703)\\
+% Geometry based maths in Vision (16-822)\\
+% Computational Photography (15-663)\\
+
 Intro to Machine Learning \\
 Intro to Computer Vision \\
 Math fundamentals for Robotics \\
@@ -131,6 +140,7 @@ Visual Learning and Recognition \\
 Deep Reinforcement Learning \\
 Geometry based maths in Vision \\
 Computational Photography \\
+
 \sectionsep
 Algorithms and Data Structures \\
 Operating Systems \\
@@ -146,9 +156,9 @@ Digital Signal Processing \\
 C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
 \textbullet{} OpenCL \textbullet{} \LaTeX\ \\ 
 \sectionsep
-\subsection{Libraries and frameworks} 
-TensorFlow (Python and C++) \textbullet{} PyTorch \textbullet{} OpenCV \textbullet{} Numpy
-\textbullet{} OpenAI gym \textbullet{} scikit-learn \\
+\subsection{Libraries} 
+PyTorch (Python and C++) \textbullet{} OpenCV \textbullet{} Numpy \textbullet{} TensorFlow (Python and C++) \textbullet{} ROS \textbullet{} PCL
+\textbullet{} scikit-learn \textbullet{} OpenAI gym \textbullet{} Ax (Adaptive Experimentation) \\
 \sectionsep
 \subsection{Operating Systems}
 Linux \textbullet{} Windows \textbullet{} Android \\
@@ -173,29 +183,55 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 
 \section{Experience}
 
-\runsubsection{Samsung Research America}
-\descript{| Computer Vision Research Intern }
-\location{May 2018 - August 2018 | Mountain View, USA}
+\runsubsection{Cyngn Inc (self-driving vehicle company)}
+\descript{| Perception Engineer }
+\location{Feb 2019 - Present | Menlo Park, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed human pose datasets for proprietary
-sensors using unsupervised domain adaptation and trained human pose estimation network and developed a C++ application for deployment
+\item Ported a popular open source 2d detection PyTorch model to TorchScript and implemented 2D detection pipeline in C++
+\item Working on finetuning the same by
+    \begin{itemize}
+        \item Incorporating architectural advances such as weighted BIFPN from 'EfficientDet' paper
+        \item Using Swish activation over ReLU activation
+        \item Tuning hyperparameters such as learning rate, weight decay, focal loss parameters, loss weightage parameters using Bayesion Optimization package called 'Ax'
+        \item Creating hierarchy of classes to better differentiate between classes and easily adopt with different annotation formats
+    \end{itemize}
+\item Designed and implemented traffic light detection system from scratch consisting of components such as traffic light detection, traffic light recognition and tracking
+\item Analyzed the depth error of stereo and came up with an optimal baseline width taking into account target working range, camera FOV and permissible blindspot
+\item Worked on prototyping multilayer stixels world work on the in-house stereo camera setup which involved camera calibration, stereo rectification, tuning SGBM parameters and understanding stixels computation
+\item Worked on choosing camera format and lens focal length for required detection range and Field of View
+\item Designed and implemented software based Lidar-Camera synchronization system that is capable of operating at 10Hz under certain configurations
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Texas Instruments}
-\descript{| Software Engineer }
-\location{July 2014 - June 2017 | Bangalore, India}
+\runsubsection{Samsung Research America}
+\descript{| Computer Vision Research Intern }
+\location{Think Tank Team}
+\location{May 2018 - August 2018 | Mountain View, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
-\item Improved Adaboost classifier for object detection yielding {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
-% \item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers, HiPC 2015]}}
-\item Developed a set of Image Processing OpenCL kernels optimized for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
-% \item Accelerated OpenCV using OpenCL, boosting performance by {\bf 3x over ARM A15}
-% \item Released the above accelerated functions as applications in TI Vision SDK
+\item Developed human pose datasets for proprietary imaging
+sensors using unsupervised domain adaptation
+\item Developed a deep learning based human pose estimation network that can predict human poses on frames obtained from the
+proprietary imaging sensor
+\item Worked on deploying the above developed network by creating a C++ application using TensorFlow APIs for building and 
+executing the deep learning graph
 \end{tightemize}
 \sectionsep
+
+% \runsubsection{Texas Instruments}
+% \descript{| Software Engineer }
+% \location{July 2014 - June 2017 | Bangalore, India}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
+% \item Improved Adaboost classifier for object detection yielding {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
+% % \item Developed a set of Image Processing modules. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers, HiPC 2015]}}
+% \item Accelerated a set of OpenCV functions using OpenCL and DSP which was released as part of TI Vision SDK. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+% % \item Accelerated OpenCV using OpenCL, boosting performance by {\bf 3x over ARM A15}
+% % \item Released the above accelerated functions as applications in TI Vision SDK
+% \end{tightemize}
+% \sectionsep
 
 \runsubsection{Texas Instruments}
 \descript{| Computer Vision Intern }
@@ -210,44 +246,74 @@ sensors using unsupervised domain adaptation and trained human pose estimation n
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\end{minipage}
+\begin{minipage}[t]{0.62\textwidth} 
+
 \section{Academic Projects}
+
+% \runsubsection{HDR, color matching and tonemapping}
+% \descript{}
+% \location{September 2018 - September 2018 | CMU, Pittsburgh}
+% Created HDR images from non-linear and linear image stacks captured at exponentially varying exposures, corrected color using colorchecker and tonemapped the result
+% \sectionsep
+
+\runsubsection{Unsupervised segmentation data generation}
+\descript{}
+\location{October 2018 - December 2018 | CMU, Pittsburgh}
+Interpolated semantic segmentation labels between key frames in NYU depth dataset v2 videos using dense depth as supervision for intermediate frames improving mIoU by 2\% over FCN baseline finetuned on NYU v2 dataset
+\sectionsep
+
+\runsubsection{RGB Super slomo using high fps Dynamic vision sensor}
+\descript{}
+\location{October 2018 - December 2018 | CMU, Pittsburgh}
+Developed a deep learning network to produce high frame rate RGB video from a low frame rate RGB video using optical flow derived from high frame rate dynamic 
+vision sensor video as supervision and achieving comparable performance as that of using high FPS RGB video supervision
+\sectionsep
 
 \runsubsection{Smart reconstruction}
 \descript{}
-\location{January 2018 - May 2018 | CMU, Pittsburgh}
+\location{January 2018 - May 2018 | ILIM Lab, CMU, Pittsburgh}
 Reconstructed traffic from a single stationary camera using
-keypoint detetion, tracking and geometric constraints
+keypoint detetion and ground plane assumption (similar to the work done by Beyond Pixels paper), tracking and geometric constraints while stabilizing the camera
 \sectionsep
 
-\runsubsection{Learning hierarchical policies in dynamic environments}
-\descript{}
-\location{March 2018 - May 2018 | CMU, Pittsburgh}
-Developed an RL agent to quickly adapt to a dynamic environment with sparse reward
-\sectionsep
+% \runsubsection{Learning hierarchical policies in dynamic environments}
+% \descript{}
+% \location{March 2018 - May 2018 | CMU, Pittsburgh}
+% Developed an RL agent to quickly adapt to a dynamic environment with sparse reward
+% \sectionsep
 
 \runsubsection{Weakly Supervised Object detection}
 \descript{}
 \location{March 2018 - March 2018 | CMU, Pittsburgh}
-Implemented weakly supervised object detection algorithm: WSDDN
+Implemented weakly supervised object detection algorithm: WSDDN as part of course project
 \sectionsep
 
-\runsubsection{Lidar plus IMU SLAM}
+% \runsubsection{Lidar plus IMU SLAM}
+% \descript{}
+% \location{February 2018 - March 2018 | CMU, Pittsburgh}
+% Fused LIDAR with IMU by implementing hector slam with the IMU extension
+% \sectionsep
+
+\runsubsection{Scene Classification}
 \descript{}
-\location{February 2018 - March 2018 | CMU, Pittsburgh}
-Fused LIDAR with IMU by implementing hector slam with the IMU extension
+\location{September 2017 | CMU, Pittsburgh}
+Performed scene classification using Spatial Pyramid Matching from scratch as part of course project
 \sectionsep
 
 \runsubsection{Digital Art using SFM}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application to create portrait effect from single camera using SFM and 3D segmentation
+Developed an application to create portrait effect from single camera using SFM and 3D segmentation as part of course project
 \sectionsep
 
 \runsubsection{Intelligent Inpainting}
 \descript{}
 \location{October 2017 - November 2017 | CMU, Pittsburgh}
-Developed an application that removes a person from an image from a single click using machine learning and exemplar inpainting
+Developed an application that removes a person from an image from a single click using pedestrian detection, semantic segmentation and exemplar inpainting
 \sectionsep
+
+
 
 % \runsubsection{Network Regularisation for Aligned Objects}
 % \descript{}
@@ -267,11 +333,7 @@ Developed an application that removes a person from an image from a single click
 % Developed code for panorama creation from scratch on Matlab
 % \sectionsep
 
-% \runsubsection{Scene Classification}
-% \descript{}
-% \location{September 2017 | CMU, Pittsburgh}
-% Performed scene classification using Spatial Pyramid Matching from scratch
-% \sectionsep
+
 
 % \runsubsection{Structure from Motion}
 % \descript{}
@@ -311,7 +373,17 @@ Developed an application that removes a person from an image from a single click
 %\bibliography{publications}
 %\nocite{*}
 
-\end{minipage} 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.36\textwidth} 
+
+\section{Publications}
+% \begin{itemize}
+    \textbullet{} Improved ground plane detection in real-time using homography, ICCE \\
+    \textbullet{} Understanding performance benefit of asynchronous data transfers in OpenCL programs executing on media processors, HiPC
+% \end{itemize}
+
+\end{minipage}
 
 % \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 

@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.9in]{geometry}
+\title{Cover Letter}
+\date{\vspace{-5ex}}
+\begin{document}
+\maketitle
+
+To whomsoever it may concern, \\
+
+\indent \indent I am a Masters student in Computer Vision at CMU (graduating Dec '18). My interests lie at the intersection of Deep learning and geometry based computer vision. 
+Throughout the past 1 year, I got a plenty of opportunities to learn Machine Learning and Deep learning algorithms such as supervised learning, unsupervised learning and deep reinforcement learning 
+and geometry based computer vision techniques for panorama creation, augmented reality and tracking. \\
+
+\indent \indent Previously, I worked as a software engineer for 3 years at Texas Instruments in India on problems such as object detection, action recognition and scene reconstruction.
+I always found my work very interesting as it involves solving computer vision related problems. Through such interesting work, I have been able to convert my ideas into publications too! \\
+
+\indent \indent I am enthusiastic to work in roles that allow me to develop and apply Computer Vision and Machine Learning techniques to solving real world problems. \\
+
+Regards
+
+Suriya Narayanan L
+
+\end{document}

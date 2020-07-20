@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[document]{ragged2e}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+%\usepackage{sectsty}
+%\allsectionsfont{\raggedleft}
+
+%\usepackage{pdfrender,xcolor}
+%\pdfrender{StrokeColor=black,TextRenderingMode=2,LineWidth=100pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\href{https://in.linkedin.com/in/suriya-narayanan}{Suriya Narayanan Lakshmanan@linkedin} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}
+%}
+
+\namesection{Suriya Narayanan}{Lakshmanan}{ \urlstyle{same}\url{https://in.linkedin.com/in/suriya-narayanan} | 412.626.8524 | \href{mailto:snlakshm@andrew.cmu.edu}{snlakshm@andrew.cmu.edu}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Carnegie Mellon University, Robotics Institute}
+\descript{Master's in Computer Vision}
+\location{Dec 2018 | Pittsburgh, PA}
+\location{ Cum. GPA: \bf{N/A} }
+\sectionsep
+
+\subsection{National Institute of \break Technology, Tiruchirappalli}
+\descript{Bachelor of Technology in \break Electrical and Electronics Engineering}
+\location{May 2014 | Tiruchirappalli, India}
+\location{ Cum. GPA: \bf {8.8 / 10.0} }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Facebook:// \href{https://www.facebook.com/supernova63}{\bf suriya-narayanan@fb} \\
+%Github:// \href{https://github.com/SuriyaNitt}{\bf suriya-narayanan@github} \\
+%LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf suriya-narayanan@linkedin} \\
+%Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf suriya-narayanan@twitter} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+Intro to Machine Learning \\
+Intro to Computer Vision \\
+Math fundamentals for Robotics \\
+Algorithms and Data Structures \\
+Operating Systems \\
+Object Oriented Programming \\
+Digital Signal Processing \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} OpenCL \\
+Matlab \textbullet{} Cuda \textbullet{} \LaTeX\ \textbullet{} RobotC \\ 
+\sectionsep
+\subsection{Libraries} 
+OpenCV \textbullet{} Numpy \textbullet{} Keras \textbullet{} Tflearn \textbullet{} Theano \textbullet{} TensorFlow \textbullet{} scikit-learn \\
+\sectionsep
+\subsection{Operating Systems}
+Linux \textbullet{} Windows \textbullet{} TI sysBIOS \textbullet{} Android \\
+\sectionsep
+\subsection{Packages}
+Eclipse \textbullet{} Code Composer Studio \textbullet{} Qt \textbullet{} GIMP \textbullet{} Microsoft Office \textbullet{} Git \\
+\sectionsep
+\subsection{Frameworks}
+OpenCL \textbullet{} CUDA \textbullet{} TI Vision SDK \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.62\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Texas Instruments}
+\descript{| Software Engineer }
+\location{July 2014 - June 2017 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improved Adaboost classifier for object detection by adapting soft exit with {\bf 10\%} more true detections. \href{http://ieeexplore.ieee.org/document/7889296/}{\bf \textit{[Efficient object detection and classification on low power embedded systems, ICCE 2017]}}
+\item Improved accuracy of TI CNN model for driver drowsiness detection by {\bf 2x}
+\item Developed a set of OpenCL kernels optimized using SIMD and DMA programming for TI DSP. \href{http://ieeexplore.ieee.org/document/7397627/}{ \bf \textit{[Understanding the Performance Benefit of Asynchronous Data Transfers in OpenCL Programs Executing on Media Processors, HiPC 2015]}}
+\item Accelerated a list of 15 OpenCV functions on TI DSP using OpenCL, boosting performance by {\bf 3x over ARM A15}
+\item Released the above accelerated functions as applications in TI Vision SDK
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Texas Instruments}
+\descript{| Software Engineering Intern }
+\location{May 2013 – July 2013 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Improved an existing homography based Ground Plane Detection by {\bf 10\%} by defining an intelligent ROI and lane masking technique. \href{https://www.google.com/patents/US20150178573}{\bf \textit{[Ground plane detection, Patent 2017]}}. \href{http://ieeexplore.ieee.org/document/6775971/}{\bf \textit{[Improved ground plane detection in real time systems using homography, ICCE 2014]}}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic Projects}
+\runsubsection{Structure from Motion}
+\descript{}
+\location{Jan 2014 – April 2014 | NIT Tiruchirappalli, India}
+Developed a C++ Structure from Motion prototype recreating the theoretical results {\it leading to good understanding of  multi-view geometry}
+\sectionsep
+
+\runsubsection{Real-time sudoku solver}
+\descript{}
+\location{August 2013 – August 2013 | NIT Tiruchirappalli, India}
+Created an android application that uses camera to search for sudoku in its view and solves it upon detecting one\\
+\href{https://play.google.com/store/apps/details?id=com.rtss&hl=en}{\bf \textit{Realtime Sudoku Solver on Play Store}}
+\sectionsep
+
+\runsubsection{FTC robotics challenge}
+\descript{}
+\location{Jan 2013 – March 2013 | NIT Tiruchirappalli, India}
+Programmed a robot which can either automatically or manually pick up rings and deposit on racks. {\it Won Inspire and Innovation awards for the winning the competition}
+\sectionsep
+
+\runsubsection{Eye Mouse}
+\descript{}
+\location{Jan 2012 – Jan 2012 | NIT Tiruchirappalli, India}
+Developed a computer vision application that tracks the eye ball movement and controls the mouse pointer accordingly using OpenCV 2.0
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
+%2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
+%2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
+%2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\begin{minipage}[t]{0.35\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/supernova63}{\bf Suriya Narayanan@fb} \\
+Github:// \href{https://github.com/SuriyaNitt}{\bf SuriyaNitt@github} \\
+LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf Suriya Narayanan \break Lakshmanan@linkedin} \\
+Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf Suriya Narayanan L@twitter} \\
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.62\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
+2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
+2012     & 2\textsuperscript{nd}/30 Tech. projects competition, Pragyan, NITT Tech fest\\
+2007     & 2\textsuperscript{nd} in district level drawing competition, IGNP Forest Dept. \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+
+\end{document}  \documentclass[]{article}
