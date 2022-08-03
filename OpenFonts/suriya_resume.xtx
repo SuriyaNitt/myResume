@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -86,13 +86,13 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.3\textwidth} 
+\begin{minipage}[t]{0.3\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
 
 %\subsection{Carnegie Mellon University, Robotics Institute}
 \subsection{CMU, Robotics Institute}
@@ -113,7 +113,7 @@
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{Links} 
+%\section{Links}
 %Facebook:// \href{https://www.facebook.com/supernova63}{\bf suriya-narayanan@fb} \\
 %Github:// \href{https://github.com/SuriyaNitt}{\bf suriya-narayanan@github} \\
 %LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf suriya-narayanan@linkedin} \\
@@ -154,9 +154,9 @@ Digital Signal Processing \\
 \section{Skills}
 \subsection{Programming}
 C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
-\textbullet{} OpenCL \textbullet{} \LaTeX\ \\ 
+\textbullet{} OpenCL \textbullet{} \LaTeX\ \\
 \sectionsep
-\subsection{Libraries} 
+\subsection{Libraries}
 OpenCV \textbullet{} PyTorch (Python and C++) \textbullet{} ROS \textbullet{} PCL \textbullet{} Numpy \textbullet{} TensorFlow (Python and C++)
 \textbullet{} scikit-learn \\
 \sectionsep
@@ -173,9 +173,9 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.69\textwidth} 
+\begin{minipage}[t]{0.69\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -183,9 +183,29 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 
 \section{Experience}
 
+\runsubsection{Nvidia Corp.}
+\descript{| Computer Vision Engineer }
+\location{Feb 2022 - Present | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Accelerated obstacle detection algorithm by porting CPU code to CUDA achieving 10x speedup
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nvidia Corp.}
+\descript{| Computer Vision Engineer }
+\location{Jan 2021 - Jan 2022 | Santa Clara, CA, USA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Prototyped and designed obstacle detection algorithm for small obstacle sizes
+\item Implemented the designed obstacle detection algorithm to run on CPU
+\item Designed porting the obstacle detection algorithm to Nvidia GPU using CUDA
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Cyngn Inc (self-driving vehicle company)}
 \descript{| Perception Engineer }
-\location{Feb 2019 - Present | Menlo Park, CA, USA}
+\location{Feb 2019 - Oct 2020 | Menlo Park, CA, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Designed and implemented traffic light detection system from scratch consisting of components such as traffic light detection, traffic light recognition and tracking
@@ -218,7 +238,7 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 sensors using unsupervised domain adaptation
 \item Developed a deep learning based human pose estimation network that can predict human poses on frames obtained from the
 proprietary imaging sensor
-\item Deployed the above developed network by creating a C++ application using TensorFlow APIs for building and 
+\item Deployed the above developed network by creating a C++ application using TensorFlow APIs for building and
 executing the deep learning graph
 \end{tightemize}
 \sectionsep
@@ -237,6 +257,13 @@ executing the deep learning graph
 % \end{tightemize}
 % \sectionsep
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\begin{minipage}[t]{0.62\textwidth}
+
 \runsubsection{Texas Instruments}
 \descript{| Computer Vision Intern }
 \location{May 2013 – July 2013 | Bangalore, India}
@@ -245,13 +272,6 @@ executing the deep learning graph
 \item Improved an existing homography based Ground Plane Detection by {\bf 10\%}. \href{https://www.google.com/patents/US20150178573}{\bf \textit{[Ground plane detection,  \color{blue}{Patent 2017}]}}. \href{http://ieeexplore.ieee.org/document/6775971/}{\bf \textit{[Improved ground plane detection in real time systems using homography, ICCE 2014]}}
 \end{tightemize}
 \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{minipage}
-\begin{minipage}[t]{0.62\textwidth} 
 
 \section{Academic Projects}
 
@@ -270,7 +290,7 @@ Interpolated semantic segmentation labels to frames in between key frames in NYU
 \runsubsection{RGB Super slomo using high fps Dynamic vision sensor}
 \descript{}
 \location{October 2018 - December 2018 | CMU, Pittsburgh}
-Developed a deep learning network to produce high frame rate RGB video from a low frame rate RGB video using optical flow derived from high frame rate dynamic 
+Developed a deep learning network to produce high frame rate RGB video from a low frame rate RGB video using optical flow derived from high frame rate dynamic
 vision sensor video as supervision and achieving comparable performance as that of using high FPS RGB video supervision
 \sectionsep
 
@@ -351,14 +371,14 @@ Developed an application that removes a person from an image from a single click
 % Created an android application that searches for sudoku mesh in its camera view and solves upon detecting one\\
 % \href{https://play.google.com/store/apps/details?id=com.rtss&hl=en}{\bf \textit{Realtime Sudoku Solver on Play Store}}
 % \sectionsep
-    
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\section{Awards} 
+%\section{Awards}
 %\begin{tabular}{rll}
 %2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
 %2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
@@ -371,7 +391,7 @@ Developed an application that removes a person from an image from a single click
 %     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{Publications} 
+%\section{Publications}
 %\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
 %\bibliographystyle{abbrv}
 %\bibliography{publications}
@@ -379,7 +399,7 @@ Developed an application that removes a person from an image from a single click
 
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.36\textwidth} 
+\begin{minipage}[t]{0.36\textwidth}
 
 \section{Publications}
 % \begin{itemize}
@@ -399,21 +419,21 @@ Developed an application that removes a person from an image from a single click
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \section{Links} 
+% \section{Links}
 % Facebook:// \href{https://www.facebook.com/supernova63}{\bf Suriya Narayanan@fb} \\
 % Github:// \href{https://github.com/SuriyaNitt}{\bf SuriyaNitt@github} \\
 % LinkedIn://  \href{https://in.linkedin.com/in/suriya-narayanan}{\bf Suriya Narayanan \break Lakshmanan@linkedin} \\
 % Twitter://  \href{https://twitter.com/whitewalker987?lang=en}{\bf Suriya Narayanan L@twitter} \\
 
-% \end{minipage} 
+% \end{minipage}
 % \hfill
-% \begin{minipage}[t]{0.62\textwidth} 
+% \begin{minipage}[t]{0.62\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \section{Awards} 
+% \section{Awards}
 % \begin{tabular}{rll}
 % 2013	     & Inspire and Innovation award of First Tech Challenge, Caterpillar \\
 % 2013	     & 1\textsuperscript{st}/30  Tech. projects competition, Pragyan, NITT Tech fest\\
@@ -422,6 +442,6 @@ Developed an application that removes a person from an image from a single click
 % \end{tabular}
 % \sectionsep
 
-% \end{minipage} 
+% \end{minipage}
 
 \end{document}  \documentclass[]{article}
