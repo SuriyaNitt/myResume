@@ -189,7 +189,8 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \location{Oct 2022 - Present | Santa Clara, CA, USA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Prodcutionized lidar code to run on vehicle on embedded NVIDIA hardware
+\item Shipping multiple L3 autonomous vehicle software products running on NVIDIA hardware
+\item Productionized lidar code to run on vehicle on embedded NVIDIA hardware
 \item Adapted Lidar hazard detector to work with solid state lidars that improved detection range by 2x
 \item Accelerated camera object tracker by 2.5x, traffic sign detector by 2x using CUDA optimizations
 \item Implmented KPI WF to evaluate hazard detection with nightly dashboard
@@ -225,17 +226,17 @@ Git \textbullet{} Microsoft Office \textbullet{} GIMP \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Designed and implemented traffic light detection system from scratch consisting of components such as traffic light detection, traffic light recognition and tracking
-\item 2d object detection using PyTorch
-    \begin{itemize}
-        \item Built on top of open source model and finetuned by
-            \begin{itemize}
-                \item Incorporating architectural advances such as weighted BIFPN from 'EfficientDet' paper
-                \item Using Swish activation over ReLU activation
-                \item Tuning hyperparameters such as learning rate, weight decay, focal loss parameters, loss weightage parameters using Bayesion Optimization package called 'Ax'
-                \item Creating hierarchy of classes to better differentiate between classes and easily adopt with different annotation formats
-            \end{itemize}
-        \item Ported 2d detection model to TorchScript and implemented 2D detection pipeline in C++
-    \end{itemize}
+\item Built 2d object detection system using PyTorch with BIFPN, Swish activation and deployed using TorchScript
+    % \begin{itemize}
+    %     \item Built on top of open source model and finetuned by
+    %         \begin{itemize}
+    %             \item Incorporating architectural advances such as weighted BIFPN from 'EfficientDet' paper
+    %             \item Using Swish activation over ReLU activation
+    %             \item Tuning hyperparameters such as learning rate, weight decay, focal loss parameters, loss weightage parameters using Bayesion Optimization package called 'Ax'
+    %             \item Creating hierarchy of classes to better differentiate between classes and easily adopt with different annotation formats
+    %         \end{itemize}
+    %     \item Ported 2d detection model to TorchScript and implemented 2D detection pipeline in C++
+    % \end{itemize}
 \item Evaluation of lidar based SLAM algorithms for indoor applications
 \item Analyzed the depth error of stereo and came up with an optimal baseline width taking into account target working range, camera FOV and permissible blindspot
 % \item Protyped multilayer stixels world work on the in-house stereo camera setup which involved camera calibration, stereo rectification, tuning SGBM parameters and understanding stixels computation
